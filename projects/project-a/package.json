@@ -1,0 +1,14 @@
+{
+	"name": "@example/project-a",
+	"version": "1.0.0",
+	"main": "./dist/index.mjs",
+	"scripts": {
+		"build": "pnpm rollup --config rollup.config.mjs"
+	},
+	"dependencies": {
+		"@example/project-b": "workspace:*"
+	},
+	"devDependencies": {
+		"@config/rollup": "workspace:*"
+	}
+}
